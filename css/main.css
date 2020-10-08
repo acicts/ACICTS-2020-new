@@ -3,7 +3,7 @@
 body,
 html {
     height: 100% !important;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -120,7 +120,7 @@ div#navbarNavDropdown {
     border-color: #a20909;
     border-style: solid none; */
     background-color: black;
-    padding: 60px 0;
+    padding: 80px 0 30px;
 }
 
 h2.section-title {
@@ -221,14 +221,14 @@ small.text-muted {
 }
 
 .section-b{
-    padding: 15px 20px !important;
+    padding: 35px 20px 15px !important;
     background-color: #000000ed;
 }
 
 .blockquote>p {
     font-size: .95rem !important;
     text-align: justify;
-    color: #ffffff3b !important;
+    color: #ffffff8c !important;
     padding: 0 20%;
 }
 
@@ -261,6 +261,7 @@ img.card-img-top3 {
 
 .other-members h5{
     margin-bottom: 0;
+    color: #7575758c;
 }
 
 @media only screen and (max-width: 576px) {
