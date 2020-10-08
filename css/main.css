@@ -12,6 +12,26 @@ body {
     font-weight: 300 !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
 .bg-black {
     background-color: #000000;
 }
@@ -168,6 +188,13 @@ img.card-img-top {
     margin: auto;
 }
 
+@media only screen and (max-width: 992px) {
+    img.card-img-top {
+        width: 15vh;
+        margin: 0 0 0 15px;
+    }
+}
+
 p.card-text {
     color: #ffffff8c !important;
     font-size: 0.8rem;
@@ -184,10 +211,18 @@ small.text-muted {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 30px 60px 100px;
+}
+
+@media only screen and (max-width: 576px) {
+    .parallax-img2 {
+        padding: 10px;
+    }
 }
 
 .section-b{
-    padding: 10px 0 !important;
+    padding: 15px 20px !important;
+    background-color: #000000ed;
 }
 
 .blockquote>p {
@@ -197,17 +232,9 @@ small.text-muted {
     padding: 0 20%;
 }
 
-.parallax-img3 {
-    background-image: url("../images/parallax/bg2.jpg");
-    min-height: 120px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .section-c div.card{
     transition: 1s;
+    margin-bottom: 20px;
 }
 
 .section-c div.card:hover{
@@ -219,4 +246,81 @@ img.card-img-top2 {
     height: 200px;
     object-fit: cover;
     margin: auto;
+}
+
+img.card-img-top3 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.other-members div.col{
+    margin-bottom: 20px;
+}
+
+.other-members h5{
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .other-members {
+        padding: 0 20px;
+    }
+}
+
+input.form-control, textarea.form-control {
+    border-radius: 0;
+    background: #40404040;
+    border-style: none none none solid;
+    border-width: 5px;
+    padding: 2px 10px;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    color: black !important;
+    background: #969696;
+    border-color: white;
+    box-shadow: 0 0 black;
+}
+
+table{
+    color: #636a73 !important;
+}
+
+table td.topic{
+    font-weight: 500;
+}
+
+.parallax-img3 {
+    background-image: url("../images/parallax/ac3.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-overlay {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.copyrights{
+    background-color: black;
+    padding: 14px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 300;
 }
