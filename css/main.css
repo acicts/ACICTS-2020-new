@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body,
+html {
+    height: 100% !important;
+
+}
+
+body {
+    background-color: black !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-dark-ash {
+    background-color: #101010 !important;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.top-bar>div.pb1 {
+    background-color: #a20909;
+    width: 50%;
+    height: 4px;
+}
+
+.top-bar>div.pb2 {
+    background-color: #ce8500;
+    width: 50%;
+    height: 4px;
+}
+
+.bg-img {
+    height: 100vh !important;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-overlay {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    position: absolute;
+    bottom: 6.5rem;
+}
+
+.carousel-caption h2{
+    font-weight: 500;
+}
+
+.carousel-caption h2 span {
+    /* color: #a20909; */
+    font-weight: 700;
+}
+
+.navbar {
+    padding: 100px 0;
+}
+
+.navbar-brand {
+    padding: 5px !important;
+    font-weight: 500;
+}
+
+div#navbarNavDropdown {
+    font-size: 0.8rem;
+}
+
+.logo-small {
+    width: 100px;
+}
+
+.parallax-img {
+    background-image: url("../images/parallax/bg1.jpg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+    /* border: 0 2px;
+    border-color: #a20909;
+    border-style: solid none; */
+    background-color: black;
+    padding: 60px 0;
+}
+
+h2.section-title {
+    text-align: center;
+    color: #969696;
+    padding: 25px;
+    font-weight: 700;
+}
+
+/* Card Flip Animation */
+.card-flip {
+    perspective: 1000px;
+}
+
+.card-flip:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.card-flip,
+.front,
+.back {
+    width: 100%;
+    height: 300px;
+}
+
+.flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+/*  */
+
+.card {
+    border-radius: 0 !important;
+    padding: 10px;
+}
+
+h5.card-main-topic {
+    font-size: 0.85rem;
+    color: #7b7b7b;
+    text-align: center;
+    padding: 10px;
+}
+
+img.card-img-top {
+    width: 60%;
+    margin: auto;
+}
+
+p.card-text {
+    color: #ffffff8c !important;
+    font-size: 0.8rem;
+}
+
+small.text-muted {
+    font-size: 0.7rem;
+}
+
+.parallax-img2 {
+    background-image: url("../images/parallax/bg2.jpg");
+    min-height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-b{
+    padding: 10px 0 !important;
+}
+
+.blockquote>p {
+    font-size: .95rem !important;
+    text-align: justify;
+    color: #ffffff3b !important;
+    padding: 0 20%;
+}
+
+.parallax-img3 {
+    background-image: url("../images/parallax/bg2.jpg");
+    min-height: 120px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-c div.card{
+    transition: 1s;
+}
+
+.section-c div.card:hover{
+    background-color: #1b1b1b !important;
+}
+
+img.card-img-top2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+}
