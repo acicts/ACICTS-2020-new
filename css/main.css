@@ -176,6 +176,24 @@ h2.section-title {
     padding: 10px;
 }
 
+.text-muted{
+    font-size: 1rem !important;
+}
+
+.section-a small.text-muted a{
+    cursor: pointer;
+}
+
+.section-a small.text-muted a:hover::after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: 16px;
+    width: 18px;
+    height: 2px;
+    background-color: #cdd3d9;
+}
+
 h5.card-main-topic {
     font-size: 0.85rem;
     color: #7b7b7b;
@@ -261,7 +279,7 @@ img.card-img-top3 {
 
 .other-members h5{
     margin-bottom: 0;
-    color: #7575758c;
+    color: #ffffffbf;
 }
 
 @media only screen and (max-width: 576px) {
@@ -291,6 +309,7 @@ table{
 
 table td.topic{
     font-weight: 500;
+    color: white;
 }
 
 .parallax-img3 {
