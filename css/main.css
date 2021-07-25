@@ -37,7 +37,7 @@ background: #555;
 }
 
 .bg-dark-ash {
-    background-color: #101010 !important;
+    background-color: #0e0e0e !important;
 }
 
 .top-bar {
@@ -91,6 +91,8 @@ background: #555;
 
 .navbar {
     padding: 100px 0;
+	box-shadow: 0 5px 20px 0px #020202e0;
+	border-radius: .25rem !important
 }
 
 .navbar-brand {
@@ -101,6 +103,27 @@ background: #555;
 div#navbarNavDropdown {
     font-size: 0.8rem;
 }
+
+.navbar .nav-item{
+    padding: 10px 15px;
+    border-radius: 0.2em;
+    margin: 0 5px;
+	transition: 0.2s;
+}
+
+.navbar .nav-item:hover{
+	background: #151515;
+}
+
+.navbar .nav-item:hover .nav-link{
+	color: rgba(255,255,255,.75);
+}
+
+.navbar .nav-link h6{
+	display: inline;
+	font-weight: 350 !important;
+}
+	
 
 .logo-small {
     width: 100px;
@@ -130,6 +153,28 @@ h2.section-title {
     font-weight: 700;
 }
 
+
+.events-cards .col .card{
+	border: 1px solid rgb(43 43 43 / 38%);
+	border-radius: .25rem !important;
+}
+
+.events-cards .col .card .visit-btn a{
+	background-color: #adb5bda8;
+    color: black;
+    padding: 5px 10px;
+    font-size: 80%;
+    border-radius: 15px;
+	transition: 1s;
+	text-decoration: none;
+}
+
+.events-cards .col .card .visit-btn:hover a{
+	background-color: #adb5bdfa;
+}
+	
+
+/*
 .card-splash{
     margin: 30px 0;
     border-radius: 10px;
@@ -137,8 +182,9 @@ h2.section-title {
     height: 250px;
     overflow: hidden;
     position: relative;
-    border: 0.5px solid #ffffff17;
+    border: 1px solid rgb(43 43 43 / 38%);
     box-shadow: 1px 1px 10px #63636352;
+	border-radius: .25rem !important
 }
 
 .bg-video-overlay{
@@ -213,6 +259,8 @@ a{
 .card-splash-content h5{
     margin-top: 0.5rem;
 }
+*/
+
 
 @media only screen and (max-width: 992px) {
     .splash-card-logo1{
@@ -265,6 +313,9 @@ a{
 }
 
 /*  */
+.events-cards{
+	padding:30px 0;
+}
 
 .card {
     border-radius: 0 !important;
@@ -277,16 +328,6 @@ a{
 
 .section-a small.text-muted a{
     cursor: pointer;
-}
-
-.section-a small.text-muted a:hover::after {
-    content: "";
-    position: absolute;
-    left: 35px;
-    bottom: 16px;
-    width: 18px;
-    height: 2px;
-    background-color: #cdd3d9;
 }
 
 h5.card-main-topic {
@@ -324,7 +365,7 @@ small.text-muted {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 60px 100px;
+    padding: 60px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -334,7 +375,8 @@ small.text-muted {
 }
 
 .section-b{
-    padding: 35px 20px 15px !important;
+    padding: 35px 20px !important;
+	border-radius: 0.25em;
     background-color: #000000ed;
 }
 
@@ -348,10 +390,19 @@ small.text-muted {
 .section-c div.card{
     transition: 1s;
     margin-bottom: 20px;
+	border-radius: 0.25em !important;
 }
 
 .section-c div.card:hover{
     background-color: #1b1b1b !important;
+}
+
+.section-c div.card .card-footer{
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.section-c div.card .card-footer small{
+	font-size: 0.8em !important;
 }
 
 img.card-img-top2 {
@@ -359,6 +410,7 @@ img.card-img-top2 {
     height: 200px;
     object-fit: cover;
     margin: auto;
+	border-radius: 0.25em !important;
 }
 
 img.card-img-top3 {
@@ -383,13 +435,35 @@ img.card-img-top3 {
     }
 }
 
-input.form-control, textarea.form-control {
-    border-radius: 0;
-    background: #40404040;
-    border-style: none none none solid;
-    border-width: 5px;
-    padding: 2px 10px;
+.section-d{
+    font-size: .9em;
 }
+
+.section-d .board-row div.card{
+    transition: 1s;
+    margin-bottom: 20px;
+	border-radius: 0.25em !important;
+}
+
+.section-d .board-row div.card:hover{
+    background-color: #1b1b1b !important;
+}
+
+.section-d .board-row div.card img{
+	border-radius: 0.25em !important;
+}
+
+
+input.form-control, textarea.form-control {
+    background: #40404040;
+	border-radius: 0.25em;
+    background: #40404040;
+    border-style: none none none none;
+    border-width: 3px;
+    padding: 2px 10px;
+	font-weight: 100;
+}
+
 
 input.form-control:focus, textarea.form-control:focus {
     color: black !important;
@@ -398,6 +472,12 @@ input.form-control:focus, textarea.form-control:focus {
     box-shadow: 0 0 black;
 }
 
+.section-d button{
+	font-size: .9em;
+	border-radius: 0.25em !important;
+}
+
+
 table{
     color: #636a73 !important;
 }
@@ -405,6 +485,10 @@ table{
 table td.topic{
     font-weight: 500;
     color: white;
+}
+
+.contact-card{
+	border-radius: 0.25em !important;
 }
 
 .parallax-img3 {
